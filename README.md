@@ -41,6 +41,15 @@ A. Cell segmentation:
 <br >
 B. Image analysis:<br >
 1. A single csv - statistics on data.csv - it contains data on minimum, mode and maximum values of pixel intensity for each channel, as well as the green mean intensity normalized to the red channel mean. The latter is used for the graphic statistical output.<br >
-2. A single image (outputs.png) with the violin plot of green mean intensities for the two experimental conditions. 
+2. A single image (outputs.png) with the violin plot of green mean intensities for the two experimental conditions. <br>
+
+![outputs](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/653f5ae4-4c74-4092-8670-5749f0420ff1)
+
+An important note on input images: The beckground should be kept to a minimum by selecting out the noise in the microscope settings. That is because the program will count the small pixels as blobs to count, which slows down the scanning process. In contrast to the cleaner image used for the mask above, this next input an mask pair visibly create confusion in the thresholding step:
+![yellow 4](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/0afa7094-608b-43e4-9b5a-584b28c31f35)
+
+<br >
+
+![yellow 4_mask](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/887683f6-9a31-45b8-b6e6-e00094be5b91)
 
 
