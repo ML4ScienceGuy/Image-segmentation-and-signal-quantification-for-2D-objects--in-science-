@@ -1,5 +1,5 @@
 # Image segmentation and signal quantification for 2D objects (in science)
- Using OpenCV, Scipy and Scikit Image, you will be able to quickly segment thousands of cells and extract intensity data for statistical analysis.
+ Using OpenCV, Scipy and Scikit Image in Python scripting, you will be able to quickly segment thousands of cells and extract intensity data for statistical analysis.
  
  
 This is a two part tutorial on how to segment images obtained from a life science experiment, although for real-life images of objects with a clearly defined background and not too much noise, it can function also. The images were generated in Photoshop instead of lab microscopes, in as close to the real thing as possible. Only a control and a test set were used for simplicity.
