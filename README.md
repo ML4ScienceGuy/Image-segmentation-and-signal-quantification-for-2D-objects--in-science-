@@ -15,6 +15,8 @@ The inputs will be images with black backgorund and yellow to orange hues:
 ![yellow 1](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/4a42ac81-d4a7-4e0c-b303-053fcb532194)
 ![orange 1](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/43f5a73e-2cb6-43a5-915f-1e24ad1a16cf)
 
+The images should have as little noise as possible for this script to work well, for reasons that will be explained bellow, and of course not be over-saturated, to propperly compare the signal intensities between image sets.
+
 
 The outputs will be, for the two phases:
 A. Cell segmentation:
