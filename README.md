@@ -13,7 +13,8 @@ B. Image analysis - each cell is scanned for the mean green intensity normalized
 The inputs will be images with black backgorund and yellow to orange hues:
 
 ![yellow 1](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/de1059cc-c2ab-474c-b066-7ad8c5eb5c6e)
-![orange 1](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/43f5a73e-2cb6-43a5-915f-1e24ad1a16cf)
+![orange 1](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/cdeb43c2-085a-4025-b3c4-a0a732f46d5f)
+
 
 The images should have as little noise as possible for this script to work well, for reasons that will be explained bellow, and of course not be over-saturated, to propperly compare the signal intensities between image sets.
 
@@ -23,21 +24,23 @@ A. Cell segmentation:
 1. Masks - simplified images of the original, for each image. They are produced using Otsu thresholding, and are used to separate individual cells from the original images.
 <br >
 
-![orange 2_mask](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/764d8a24-80ca-4cab-8865-1c7ace663a5b)
+![orange 2_mask](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/0594529f-4f9b-427f-81b1-c0021d2ab7ed)
+
 
 <br >
 <br >
 3. Split images - for each cell, an image with the original size but only one cell visible.
 <br >
 
-![orange 3 tif_object-1](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/7e11ec3f-9cd8-49e6-b019-a67ac265e5a7)
+![orange 3 tif_object-1](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/e9ed2710-27fc-4484-8a46-616fade4263e)
+
 
 <br >
 <br >
 5. Cropped images - from each split image, a single cell is cropped by drawing a box around its extremities, and all black signal is subtracted, leaving only the color ranges for the markers inside that cell.
 <br >
+![orange 3 tif_object-1_cropped](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/a7544373-26c1-4b36-8527-2a1ba429f0af)
 
-![orange 3 tif_object-1_cropped](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/0506f50e-6777-4e0c-a2e2-443da236d5ed)
 
 <br >
 <br >
