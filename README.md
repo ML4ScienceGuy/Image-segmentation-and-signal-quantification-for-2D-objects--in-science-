@@ -46,7 +46,11 @@ A. Cell segmentation:
 <br >
 <br >
 An important note on input images: The background should be kept to a minimum by selecting out the noise in the microscope settings. That is because the program will count the small pixels as blobs to count, which slows down the scanning process. In contrast to the cleaner image used for the mask above, this next input an mask pair visibly create confusion in the thresholding step:
+
 ![yellow 4](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/9d7f7ad5-d41b-4e7e-86db-d522375ca8c4)
+
+<br > 
+
 ![yellow 4_mask](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/434dc3d5-1adf-4124-a42d-cfd42cfceb0d)
 
 <br >
