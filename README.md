@@ -39,13 +39,16 @@ A. Cell segmentation:
 <br >
 5. Cropped images - from each split image, a single cell is cropped by drawing a box around its extremities, and all black signal is subtracted, leaving only the color ranges for the markers inside that cell.
 <br >
+
 ![orange 3 tif_object-1_cropped](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/a7544373-26c1-4b36-8527-2a1ba429f0af)
 
 
 <br >
 <br >
 An important note on input images: The background should be kept to a minimum by selecting out the noise in the microscope settings. That is because the program will count the small pixels as blobs to count, which slows down the scanning process. In contrast to the cleaner image used for the mask above, this next input an mask pair visibly create confusion in the thresholding step:
-![yellow 4](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/0afa7094-608b-43e4-9b5a-584b28c31f35)
+![yellow 4](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/9d7f7ad5-d41b-4e7e-86db-d522375ca8c4)
+![yellow 4_mask](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/434dc3d5-1adf-4124-a42d-cfd42cfceb0d)
+
 <br >
 <br >
 <br >
@@ -53,11 +56,7 @@ B. Image analysis:<br >
 1. A single csv - statistics on data.csv - it contains data on minimum, mode and maximum values of pixel intensity for each channel, as well as the green mean intensity normalized to the red channel mean. The latter is used for the graphic statistical output.<br >
 2. A single image (outputs.png) with the violin plot of green mean intensities for the two experimental conditions. <br>
 
-![outputs](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/653f5ae4-4c74-4092-8670-5749f0420ff1)
-
- <br >
- 
-![yellow 4_mask](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/887683f6-9a31-45b8-b6e6-e00094be5b91)
+![outputs](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/544ac713-243d-480a-aa3a-fefbc6603fa3)
 
 <br >
 <br >
@@ -65,13 +64,16 @@ Image processing takes place in the following way:
 1. The RGB image channels are split and stored as numpy arrays.
 2. Histograms are calculated for each channel. Here are some possible scenarios (visualization is possible inside the script):
 
-![overlapped](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/a498aad0-7bcd-484f-989f-edfe94da9818)
+![overlapped](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/8e6320f0-62cd-4f1f-a7d1-86d3a25cb320)
+
 (ratio of green/red ~1)<br >
 
-![shifted](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/c1e97a73-0cbe-45c2-a9a1-2ee043069be2)
+![shifted](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/ec7531ca-8a97-4a3f-b309-8d03efc1ead8)
+
 (ratio slightly lower than 1)<br >
 
-![large shift](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/54ff4ddb-74ca-44ed-9bee-8fa587cb2a26)
+![large shift](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/fe702e7e-a5d4-4d5f-aa18-2a955a1ead6f)
+
 (ratio of much lower than 1)<br ><br >
 
 5. Means are calculated for the histograms
