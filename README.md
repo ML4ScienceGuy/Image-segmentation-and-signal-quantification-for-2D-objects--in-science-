@@ -65,15 +65,12 @@ Image processing takes place in the following way:
 2. Histograms are calculated for each channel. Here are some possible scenarios (visualization is possible inside the script):
 
 ![overlapped](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/8e6320f0-62cd-4f1f-a7d1-86d3a25cb320)
-
 (ratio of green/red ~1)<br >
 
 ![shifted](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/ec7531ca-8a97-4a3f-b309-8d03efc1ead8)
-
 (ratio slightly lower than 1)<br >
 
 ![large shift](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/fe702e7e-a5d4-4d5f-aa18-2a955a1ead6f)
-
 (ratio of much lower than 1)<br ><br >
 
 5. Means are calculated for the histograms
