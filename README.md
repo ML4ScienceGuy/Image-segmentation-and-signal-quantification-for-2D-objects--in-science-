@@ -75,4 +75,6 @@ Image processing takes place in the following way:
 6. The green histogram mean intensity is normalized to the red histogram mean intensity.
 7. Mean green intensities are compared between datasets.
 
-The principle behind normalization is that experimental setup (cell position on slide or inside the focal field of the image) can alter the green color channel (of interest here), and the red channel can serve as a standard for correction. The means
+The principle behind normalization is that experimental setup (cell position on slide or inside the focal field of the image) can alter the green color channel (of interest here), and the red channel can serve as a standard for correction. The channel corrected mean now can be used to accurately determine if the chemical added to the experimental condition 1 or 2 had an effect. The statistics are not included here but can be easily added or created using the statistics csv generated.
+
+If you plan to use any part of this script, please cite using the cff file details.
