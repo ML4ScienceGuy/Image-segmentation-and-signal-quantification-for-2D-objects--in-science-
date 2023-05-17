@@ -21,11 +21,14 @@ A. Cell segmentation:
 1. Masks - simplified images of the original, for each image. They are produced using Otsu thresholding, and are used to separate individual cells from the original images.
 <br >
 ![orange 2_mask](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/764d8a24-80ca-4cab-8865-1c7ace663a5b)
+
 <br >
 <br >
 3. Split images - for each cell, an image with the original size but only one cell visible.
 <br >
+
 ![orange 3 tif_object-1](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/7e11ec3f-9cd8-49e6-b019-a67ac265e5a7)
+
 <br >
 <br >
 5. Cropped images - from each split image, a single cell is cropped by drawing a box around its extremities, and all black signal is subtracted, leaving only the color ranges for the markers inside that cell.
