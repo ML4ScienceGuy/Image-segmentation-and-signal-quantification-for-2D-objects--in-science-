@@ -29,7 +29,7 @@ A. Cell segmentation:
 
 <br >
 <br >
-3. Split images - for each cell, an image with the original size but only one cell visible.
+2. Split images - for each cell, an image with the original size but only one cell visible.
 <br >
 
 ![orange 3 tif_object-1](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/e9ed2710-27fc-4484-8a46-616fade4263e)
@@ -37,7 +37,7 @@ A. Cell segmentation:
 
 <br >
 <br >
-5. Cropped images - from each split image, a single cell is cropped by drawing a box around its extremities, and all black signal is subtracted, leaving only the color ranges for the markers inside that cell.
+3. Cropped images - from each split image, a single cell is cropped by drawing a box around its extremities, and all black signal is subtracted, leaving only the color ranges for the markers inside that cell.
 <br >
 
 ![orange 3 tif_object-1_cropped](https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science-/assets/47111504/a7544373-26c1-4b36-8527-2a1ba429f0af)
