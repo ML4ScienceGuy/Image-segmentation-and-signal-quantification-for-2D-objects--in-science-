@@ -39,8 +39,8 @@ A. Cell segmentation:
 
 <br >
 <br >
-B. Image analysis:
-1. A single csv - statistics on data.csv - it contains data on minimum, mode and maximum values of pixel intensity for each channel, as well as the green mean intensity normalized to the red channel mean. The latter is used for the graphic statistical output.
+B. Image analysis:<br >
+1. A single csv - statistics on data.csv - it contains data on minimum, mode and maximum values of pixel intensity for each channel, as well as the green mean intensity normalized to the red channel mean. The latter is used for the graphic statistical output.<br >
 2. A single image (outputs.png) with the violin plot of green mean intensities for the two experimental conditions. 
 
 
