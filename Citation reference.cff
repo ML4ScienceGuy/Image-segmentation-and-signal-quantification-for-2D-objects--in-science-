@@ -4,8 +4,8 @@ authors:
 - family-names: "Tanasa"
   given-names: "Sorin"
   orcid: "https://orcid.org/0000-0003-3319-2195"
-  DOI: "10.5281/zenodo.7944130"
+  DOI: "10.5281/zenodo.7944239"
 title: "Image segmentation and signal quantification for 2D objects"
 version: 1.0
 date-released: 2023-05-17
-url: "https://github.com/ML4ScienceGuy/Image-segmentation-and-signal-quantification-for-2D-objects--in-science"
+url: "https://github.com/sorin-tanasa/Image-segmentation-and-signal-quantification-for-2D-objects--in-science"
